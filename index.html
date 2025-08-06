@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        *{
+            min-width: auto;
+            transition: all 0.3s ease-in-out;
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+           
+        }
+        .btnn{
+            border: 1px solid;
+            box-shadow: 0px 7px 5px 0px black;
+            width: 500px;
+            height: auto;
+        }
+        .button{
+            gap: 10px;
+            display: flex;
+        }
+        .container{
+            width : 100%;
+            height: 100vh;
+            display: flex;
+            gap : 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        #calculator{
+            width: auto;
+            padding: 10px;
+            background-color: rgb(53, 49, 45);
+            box-shadow: 0 10px 9px 1px black;
+        }
+        #operasi{
+            background-color: transparent;
+            display: flex;
+        }
+        #value{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(218, 216, 216);
+            border-top: 1px solid;
+            border-left: 1px solid;
+            border-right: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #angka{
+            width: 150px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        #bukanAngka{
+            width : 150px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            font-size: 15px;
+            width : 50px;
+            height : 40px;
+        }
+        .header{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 9px 0.4px black;
+            background-color: transparent;
+        }
+        #bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+        .piano{
+            padding: 20px;
+            display: flex;
+            height: 200px;
+            background-color: rgb(35, 35, 34);
+            justify-content: space-around;
+            align-items: center;
+             background-color: rgb(53, 49, 45);
+            box-shadow: 0 10px 9px 1px black;
+            
+        }
+        @keyframes muter{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    .piano button{
+            height: 200px;
+        }
+    .wrap-piano h1{
+        width: 100%;
+        background-color: rgb(56, 52, 46);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar{
+        background-color: transparent;
+        color: aliceblue;
+    }
+    @media screen and (max-width: 768px) {
+
+        .box-right{
+            width: 100%;
+            height: 100vh;
+        }
+        img{
+            width: 100%;
+        }
+        .container {
+            flex-direction: column;
+            gap: 20px;
+            height: auto;
+            margin-top: 30px;
+        }
+    
+        #calculator, .wrap-piano {
+            width: 90%;
+            margin: 0 auto;
+        }
+        #calculator{
+            gap : 0px
+        }
+        #angka{
+            width : 60%;
+            position: relative;
+        }
+        #bukanAngka{
+            position:relative ;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            height: 170px;
+       
+        }
+        #value{
+            width : 98%;
+        }
+         #bukanAngka button{
+            position: relative;
+            width: 50px;
+        }
+        button{
+            width : 80px;
+        }
+        .piano {
+            width: 90%;
+            flex-direction: column;
+            height: auto;
+            padding: 10px;
+        }
+        .piano button {
+            height: 50px;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .header h1 {
+            font-size: 1.5rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="parallax-1 " style="padding: 10px ;color: aliceblue;">
+        <!--carousel-->
+        <div class="container1" style="width : 100%; display: flex;">
+            <div class="box-left1 animate__animated animate__fadeInDown animate__slow" style="overflow: hidden;;width : 70%;height: 89vh; ">
+                <div class="title">
+                    <h1>DIMAS PUTRA MADIAN</h1>
+                    <p>the man who loves studying hard</p>
+                </div> 
+                <div class="box">
+                    <div class="box-inside">
+                        <h2>SKILLS</h2>
+                        <li>Progamming</li>
+                        <li>Editing canva</li>
+                        <li>Social media Management</li>
+                        <li>Content Creator</li>
+                    </div>
+                </div>
+                <br />
+                 <div class="box">
+                    <div class="box-inside">
+                        <h2>HOBBY</h2>
+                        <li>Basketball</li>
+                        <li>Football</li>
+                        <li>GYM</li>
+                        <li>Playing Guitar</li>
+                    </div>
+                </div>
+                <br />
+                 <div class="box">9
+                    <div class="box-inside">
+                        <h2>MOTTO</h2>
+                        <p>Today is worse, tomorrow will be more worse, but the day after tomorrow will be nice</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-right1" style="width : 30%;height: 89vh;">
+                <div class="button animate__animated animate__fadeInDown animate__slow">
+                    <button onclick="insta()"class="btnn" style="margin-right: 10px;background-color: brown;z-index: 9;;padding: 10px;color: azure;border: none;cursor: pointer;">Follow me</button>
+                    <button onclick="wa()"class="btnn" style=":hover{
+                        background-color: aliceblue
+                    };margin-right: 10px;background-color: rgb(73, 139, 39);padding: 10px;color: azure;border: none;cursor: pointer;z-index: 9;">Contact Me</button>
+                </div>
+                
+                <div class="image " style="overflow: hidden;;display: flex;height: 89vh;justify-content: center;align-items: end;">
+                    <img class="animate__animated animate__fadeInRight animate__delay-2s"src="Cristiano_Ronaldo_manchester_united_wallpaper_4k_hd_for_iphone-removebg-preview.png" style="margin-bottom: 70px;width : 100%; height:auto;">
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <!--carousel off-->
+    </div>
+    <div id="parallax-2" style="margin-top: 30px;">
+        <div class="header" style="color: aliceblue;">
+            <h1>CALCULATOR AND PIANO PROJECT</h1>
+            <p>by dims madian </p>
+        </div>
+        
+        <div class="container">
+
+         <div id="calculator">
+            <h1 style="color: aliceblue;">CALCULATE HERE</h1>
+            <br />
+            <div id="value">
+            </div>
+            <div id="operasi">
+            <div id="angka">
+            </div>
+            <div id="bukanAngka">
+            </div>
+            </div>
+         </div>
+         <div class="wrap-piano" style="display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 0;">
+            <h1 style="color: aliceblue; display: flex;justify-content: center;align-items: center;">PIANO</h1>
+            <br />
+              <div class="piano">
+            <div id = "chord" style="width: 100%;">
+            </div>
+         </div>
+        </div>
+         </div>
+       
+        
+        </div>
+            
+    <div class="parallax-3">
+
+    </div>
+    
+    <div id="loading"class="wrapload" style="width : 100%;height : 100vh;display: flex; justify-content: center;align-items: center;position: fixed; top: 0;display: none;">
+         <div class="loading" 
+    style="
+    width:100px;
+    border-top: 37px solid rgb(255, 244, 244); 
+    border-radius: 100%;
+    height : 100px;
+    background-color: transparent;
+    position: absolute;
+    animation: 1s muter infinite linear;
+    z-index: 9;
+    ">
+    </div>
+    </div>
+   <video autoplay muted loop id="bg-video">
+  <source src="283431_medium.mp4" type="video/mp4">
+</video>
+<div class="parallax-3">
+    <div class="container3" style="height: 100vh;width: 100%; display: flex;justify-content: center;align-items: center;">
+        <div class="wrap-bot" style="padding: 30px;background-color: aliceblue;">
+            <div id="chatBot" style="max-width: 900px;text-align:left;height: 30px;"></div>
+            <input type="text" id="user" style="width:300px;text-align: center;padding: 10px;">
+            <input onclick="bot()"type="submit" value="Kirim" style="width:100px;padding: 10px;">
+        </div>
+    </div>
+</div>
+    <script src="calc.js"></script>
+</body>
+</html>
